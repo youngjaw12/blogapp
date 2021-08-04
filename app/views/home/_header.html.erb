@@ -9,9 +9,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-        <li class="nav-item">
-          <%= link_to "Blog", home_blog_path, class: "nav-link" %>
-        </li>
+        
 
         <li class="nav-item">
           <%= link_to "Contact Us", home_contact_path, class: "nav-link" %>
@@ -27,7 +25,18 @@
         
         
       </ul>
+      
+      
+      
+      <%= link_to 'Blog Posts', posts_path,  class: "btn btn-secondary"%> !
+      
+      
+      <%= link_to "Create Post", new_post_path, class: "btn btn-secondary" %>
+      
+      </br>
+
       <form class="d-flex">
+       
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-secondary" type="submit">Search</button>
       </form>

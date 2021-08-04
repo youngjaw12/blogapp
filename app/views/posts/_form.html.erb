@@ -11,22 +11,24 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :image %>
-    <%= form.text_field :image %>
+  <div  class="container">
+  <div  class="mb-3">
+    <%= form.text_field :image, class: "form-control", placeholder: " Upload Post Image" %>
   </div>
-
-  <div class="field">
-    <%= form.label :title %>
-    <%= form.text_field :title %>
+</br>
+  <div  class="mb-3">
+  
+    <%= form.text_field :title, class: "form-control", placeholder: " Post Title" %>
   </div>
-
-  <div class="field">
-    <%= form.label :post_content %>
-    <%= form.text_area :post_content %>
+</br>
+  <div  class="mb-3">
+    <%= form.text_field :post_content, rows:"3", class: "form-control", placeholder: " Post Content" %>
   </div>
-
+</br>
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit class: "btn btn-secondary" %>
   </div>
 <% end %>
+</div>
+</br>
+  
